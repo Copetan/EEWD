@@ -8,9 +8,7 @@ on:
     branches: [ master ]
   pull_request:
     branches: [ master ]
-  schedule:
-    # triggers the workflow every day at 5:30 and 17:30 UTC:
-    - cron:  '30 5,17 * * *'
+  workflow_dispatch:
 
 jobs:
   build:
